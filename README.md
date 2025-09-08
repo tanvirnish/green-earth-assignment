@@ -1,169 +1,53 @@
-## WELCOME TO ( সহজ সরল সিম্পল ) ASSIGNMENT-006
-
-### 📅 Deadline For 60 marks: 9th September, 2025 (11:59 pm ⏱️)
-
-### 📅 Deadline For 50 marks : 13th September , 2025 (6:00 pm⏱️)
-
-### 📅 Deadline For 30 marks: Any time after 13the September , 2025 (6:01 pm⏱️).
-
----
-# Green Earth
-
-
-## Private Repository: https://classroom.github.com/a/nVZrg5R9 
-
-## Alternative Private Repository: https://classroom.github.com/a/KCGI14ST 
-
-## Alternative Private Repository: https://classroom.github.com/a/JMuIYqgK 
-
-
----
-🌴 API Endpoints
----
-1. Get 🌴All Plants
-```bash
-https://openapi.programming-hero.com/api/plants
-```
-
-2. Get 🌴All categories <br/>
-```bash
-https://openapi.programming-hero.com/api/categories
-```
-
-
-3. Get 🌴plants by categories <br/>
-```bash
-https://openapi.programming-hero.com/api/category/${id}
-```
-
-```bash
-https://openapi.programming-hero.com/api/category/1
-```
-
-4. Get 🌴Plants Detail <br/>
-
-```bash
-https://openapi.programming-hero.com/api/plant/${id}
-```
-
-```bash
-https://openapi.programming-hero.com/api/plant/1
-```
----
-
-
-
-
-## ✅ Main Requirements 
-
-#### 1) Navbar
-
-- Website **logo/name** on the **left**  
-- **Menu items** in the **center** 
-- **Plant a Tree button** on the **right** 
-
-#### 2) Banner 
-- A **background image**  
-- A **title** and **subtitle**  
-- A **centered button**  
-
-#### 3) About Campaign
-- **Section heading**  
-- **Image on the left**, **text on the right**  
-
-#### 4) Our Impact Section 
-- Show **3 cards** with campaign **statistics**  
-
-#### 5) Plant a Tree Today Section & Footer
-- **Form**: Name, Email, Number of Trees  
-- **Footer** with copyright info 
-
-#### 6) Responsiveness 
-- Website must be **mobile responsive**  
-
----
-#### 7) Create a README file to answer the following question-
-
 
 #### 1) What is the difference between var, let, and const?
+**The three keywords basically used to declare variables in JavaScript.**
+```VAR```:- globally-scoped. 
+```LET```:- block-scoped. 
+```CONST```:- block-scoped, but cannot be reassigned.
 
 #### 2) What is the difference between map(), forEach(), and filter()? 
+**map(), forEach(), and filter(). are all methods in JavaScript basicly this methods used to iterate over arrays. But they are used different purpose and they are show different results.**
+
+```map()```:-  creates a new array by calling a provided function on every element in the original array.
+**Example:**
+const numbers = [1, 2, 3];
+const doubled = numbers.map(num => num * 2);
+console.log(doubled); ANSER:- [2, 4, 6]
+```forEach()```:- The method provides a function to execute arra y elements. It does not create a new array or return.
+**Example:**
+const numbers = [1, 2, 3];
+numbers.forEach(num => console.log(num)); ANSER:- 1 2 3
+```filter()```:- The method creates a new array using condition but not change orginial array  
+**Example:**
+const numbers = [1, 2, 3];
+const evenNumbers = numbers.filter(num => num % 2 === 0);
+console.log(evenNumbers); ANSER:- [2]
 
 #### 3) What are arrow functions in ES6?
-
+```Arrow function```:-They provide a shorter syntax compared to traditional function expressions.Arrow functions are always anonymous and not used as constructors.
+**Example:**
+*Normal function*
+const add = function(a, b) {
+  return a + b;
+};
+*Arrow function*
+const addArrow = (a, b) => a + b;
 #### 4) How does destructuring assignment work in ES6?
+```Destructuring assignment```:- It provides a more concise and readable way to extract data avoiding repetitive code. &  The variables are declared inside square brackets [] and their values are assigned from the array in the same order.
+**Example:**
+const fruits = ['apple', 'banana', 'cherry'];
+const [first, second, third] = fruits; 
+console.log(first);   
+ ANSER --apple
+
 
 #### 5) Explain template literals in ES6. How are they different from string concatenation?
+```Template literals```:-The main difference between template literals and traditional string concatenation is the syntax and readability, especially when combining variables and strings. Template literals use backticks (`` ` ``) and allow for multi-line strings and embedded expressions.
+**Example:**
+const name = 'John';
+const age = 30;
+const mesage = 'Hello, my name is ' + name + ' and I am ' + age + ' years old.'; *Traditional string concatenation*
+const message = `Hello, my name is ${name} and I am ${age} years old.`; *Template literals*
+console.log(message); 
+ANSWER --Hello, my name is John and I am 30 years old.
 
-## ⚙️ Functionalities 
-
-1) Category Loading 
-Load Tree Categories dynamically on the left side.
-
-2) Category Click → Tree Data 
-On clicking a category: load trees of that category.
-
-Display in a 3-column card layout.
-
-3) Card Contents 
- Each card includes:
-
-        - Image
-
-        -  Name
-
-        - Short description
-
-        - Category
-
-        - Price
-
-        - Add to Cart button
-
-4) Modal on Card Click 
-Clicking a tree name on a card opens a modal with full tree details.
-
-
-##  🧪 Challenges 
-
-
-    1) Add to Cart 
-    Clicking Add to Cart: - Adds the tree to Cart List
-                          - Shows tree name 
-
-    2) Total Calculation 
-    Calculate total price of trees in cart.
-
-    3) Remove from Cart 
-    Clicking ❌ removes tree and deducts price from total.
-
-    4) Loading Spinner
-    Show spinner while data is loading.
-
-    5) Active Button State 
-    Highlight active category button when selected.
-
-
-
-🧰 Technology Stack:
-        
-        HTML
-
-        CSS (Vanilla / Tailwind / DaisyUI)
-
-        JavaScript (Vanilla only, no frameworks)
-
-📌 Rules
-✅ At least 5 meaningful commits
-
-❌ No dummy text or Lorem Ipsum — must use relevant content
-
-
-
-
-
-## 🔗 Submission
-- **Live Link :** YOUR_DEPLOYED_URL_HERE  
-- **GitHub Private Repository:** YOUR_REPO_URL_HERE  
-
----
