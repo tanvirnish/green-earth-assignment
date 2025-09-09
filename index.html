@@ -20,7 +20,7 @@
     <link rel="stylesheet" href="./style/style.css">
 </head>
 
-<body class=" h-[100vh] ">
+<body class=" h-full bg-[#f0fdf4] ">
     <!-- NAVBAR START -->
     <header class="  ">
         <div class="navbar bg-[#15803d]  shadow-sm">
@@ -57,7 +57,7 @@
     </header>
     <!-- NAVBAR END -->
     <!-- HERO SECTION START -->
-    <section class="bg-green-100 flex flex-col md:flex-row items-center justify-between">
+    <section class="bg-green-100 flex flex-col md:flex-row items-center justify-between ">
 
         <div><img src="./assets/hero-leaf1.png" alt=""></div>
 
@@ -73,15 +73,66 @@
 
     </section>
     <!-- HERO SECTION END -->
+    <!-- SPAINER SECTION START -->
+    <section class="flex justify-center items-center my-10 hidden" id="spinner">
+        <span class="loading loading-bars loading-xl"></span>
+
+    </section>
+
+    <!-- SPAINER SECTION END -->
     <!-- Choose Your Trees SECTION Start -->
-     <section class="   w-10/12 md:w-8/12 mx-auto my-16 ">
+     <section class="container mx-auto my-16 h-[100%]  ">
         <h1 class="text-4xl font-semibold text-center mb-10">Choose Your Trees</h1>
-        <!-- Categories Sidebar Start -->
-        <!-- Categories Sidebar End -->
+        <div class=" grid grid-cols-1 md:grid-cols-12 gap-6">
+            <!-- Categories Sidebar Start -->
+            <aside class="md:col-span-2 p-4 " id="categories">
+                <h3 class="font-semibold mb-2 text-xl">Categories</h3>
+                <ul id="categories-list">
+                    <li class="mb-2"><a href="#" class="text-green-700 hover:underline">All Trees</a></li>
+                    <li class="mb-2"><a href="#" class="text-green-700 hover:underline">Fruit Trees</a></li>
+                </ul>
+
+            </aside>
+            <!-- Categories Sidebar End -->
+            <!-- MAIN CARD CONTENT START -->
+            <main class="md:col-span-8">
+                <div id="tree-card-container"  class=" px-8 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 ">
+     
+                </div>
+            </main>
+           
+            <!-- MAIN CARD CONTENT End -->
+            <!-- Your Cart Sidebar START -->
+            <aside class="md:col-span-2 bg-white p-4 shadow rounded">
+                <h2 class="text-lg font-bold mb-3">🛒 Your Cart</h2>
+                <ul id="cart-list" class="space-y-2"></ul>
+                <p class="mt-4 font-semibold">Total: $<span id="cart-total">0</span></p>
+            </aside>
+            <!-- Your Cart Sidebar End -->
+        </div>
      </section>
+     <!-- Modal Section Start -->
+    
+   
+    <dialog id="my_modal_5" class="modal modal-bottom sm:modal-middle">
+        <div class="modal-box">
+          <div id="card-details" class="space-y-2">
+          
+
+          </div>
+            <div class="modal-action">
+                <form method="dialog">
+                   
+                    <button class="btn">Close</button>
+                </form>
+            </div>
+        </div>
+    </dialog>
+     <!-- Modal Section END -->
+
     <!-- Choose Your Trees SECTION END -->
     <!-- About the Campaign SECTION START -->
-    <section hidden class="w-10/12 md:w-8/12 mx-auto my-16 ">
+    <section class="w-10/12 md:w-8/12 mx-auto my-16 ">
         <h1 class="text-4xl font-semibold text-center mb-10">About the Campaign</h1>
         <div class=" flex flex-col md:flex-row items-center gap-8">
             <div class="flex-1"><img class="max-w-full h-auto rounded-lg shadow-lg" src="./assets/about.png" alt="">
@@ -104,7 +155,7 @@
     </section>
     <!-- About the Campaign SECTION END -->
     <!-- Our Impact SECTION START -->
-    <section hidden class="bg-[#CFF0DC] py-6">
+    <section class="bg-[#CFF0DC] py-6">
         <h3 class="text-center text-3xl font-semibold p-10">Our Impact</h3>
         <div class=" grid grid-cols-1 md:grid-cols-3 gap-6 w-10/12  md:w-10/12 mx-auto mb-12">
             <div class=" bg-white rounded-lg shadow-lg p-8 m-4 text-center">
@@ -123,7 +174,7 @@
     </section>
     <!-- Our Impact SECTION END -->
     <!-- Plant a Tree Today SECTION START -->
-    <section hidden class="bg-[#166534] p-14">
+    <section  class="bg-[#166534] p-14">
         <h1 class="text-center text-white text-3xl font-semibold pb-10">Plant a Tree Today</h1>
 
 
@@ -152,7 +203,7 @@
     </section>
     <!-- Plant a Tree Today SECTION END -->
     <!-- FOOTER SECTION START-->
-    <footer hidden>
+    <footer >
         <div class="bg-[#14532D] text-white p-6">
             <div class="w-10/12 md:w-8/12 mx-auto flex justify-center items-center">
                 <div class="mb-4 md:mb-0">
@@ -161,6 +212,7 @@
     
     </footer>
     <!-- FOOTER SECTION END -->
+     <script src="./functionalities.js"></script>
 </body>
 
 </html>
